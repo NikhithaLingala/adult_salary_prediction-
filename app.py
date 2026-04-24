@@ -115,3 +115,20 @@ if st.button("🔮 Predict Salary"):
         st.info("Moderate confidence prediction")
     else:
         st.warning("Low confidence prediction")
+     # =========================
+    # Final Input Summary
+    # =========================
+    st.markdown("### 📋 Entered Details")
+
+    st.write(f"Age: {age}")
+    st.write(f"Gender: {gender}")
+    st.write(f"Marital Status: {marital_status}")
+    st.write(f"Relationship: {relationship}")
+    st.write(f"Race: {race}")
+    st.write(f"Education Years: {education_years}")
+    st.write(f"Employment Type: {employment_type}")
+    st.write(f"Job Role: {job_role}")
+    st.write(f"Weekly Hours: {hours}")
+    st.write(f"Capital Gain: {capital_gain}")
+    st.write(f"Capital Loss: {capital_loss}")
+    st.write(f"Country: {country}")
