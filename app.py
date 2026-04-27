@@ -11,12 +11,12 @@ threshold = joblib.load("xgboost_threshold_0_40.pkl")
 # =========================
 # Page Config
 # =========================
-st.set_page_config(page_title="Salary Predictor", layout="centered")
+st.set_page_config(page_title="Income Predictor", layout="centered")
 
 # =========================
 # Title
 # =========================
-st.title("💼 Salary Prediction App")
+st.title("💼 Income Prediction App")
 st.write("Predict whether income is >50K or <=50K")
 
 st.markdown("---")
@@ -109,12 +109,7 @@ if st.button("🔮 Predict Salary"):
     st.progress(float(proba))
     st.write(f"Score: {proba:.2f}")
 
-    if proba > 0.75:
-        st.success("High confidence prediction")
-    elif proba > 0.5:
-        st.info("Moderate confidence prediction")
-    else:
-        st.warning("Low confidence prediction")
+
      # =========================
     # Final Input Summary
     # =========================
